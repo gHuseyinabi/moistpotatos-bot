@@ -1,5 +1,4 @@
-#a simple bot using the discord api
-#this bot will reply with a random insult when someone sends !insult
+#a simple bot using the discord and reddit apis
 import discord
 import random
 import logging
