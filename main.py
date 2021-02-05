@@ -48,7 +48,8 @@ async def on_message(msg):
             await msg.channel.send(url)
 
     if msg.content.startswith('%' + 'r/memes'):
-        hot_posts = requests.get(f'http://www.reddit.com/user/lechocolatfroid/posts.json', {'User-agent': 'u/lechocolatfroid'})
+        hot_posts = requests.get(f'http://www.reddit.com/user/lechocolatfroid/posts.json', {'User-agent': 
+        'pc:https://github.com/moistpotato9873/moistpotatos-bot/blob/main/main.py:v0.92 (by /u/lechocolatfroid)'})
         txt = hot_posts.text
         print(hot_posts.text)
         data = json.loads(txt)
