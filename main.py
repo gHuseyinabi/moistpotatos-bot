@@ -49,7 +49,7 @@ async def on_message(msg):
             await msg.channel.send(url)
 
     elif msg.content.startswith(prefix + 'reddit'):
-        hot_posts = requests.get(f'http://www.reddit.com/user/lechocolatfroid/posts.json', headers={'User-agent': 
+        hot_posts = requests.get(f'http://www.reddit.com/user/lechocolatfroid/posts.json', headers={'User-Agent': 
         'pc:https://github.com/moistpotato9873/moistpotatos-bot/blob/main/main.py:v0.92 (by /u/lechocolatfroid)'})
         data = hot_posts.json()
 
